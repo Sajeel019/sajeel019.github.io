@@ -10,3 +10,40 @@
 @media(max-width:700px){.gate-card{padding:40px 23px 25px}.sparkle-left{left:4%;top:12%}.sparkle-right{right:5%;bottom:12%}.section{padding:82px 20px}.hero{min-height:calc(92vh - 76px)}.hero h1{font-size:clamp(39px,11vw,58px)}.hero-copy{font-size:14px}.sparkle-a{left:5%;top:17%}.sparkle-b{right:7%;bottom:18%}.letter-card{padding:30px 25px}.letter-card p:not(.letter-sign):not(.letter-dear){font-size:15px}.letter-stamp{right:18px;bottom:20px;width:47px;height:47px}.gallery{grid-template-columns:1fr;max-width:390px}.photo-frame,.photo-frame:nth-child(2),.photo-frame:nth-child(3){margin:0;transform:none}.photo-frame img,.photo-empty{height:280px}.reason-grid{grid-template-columns:1fr;max-width:420px;margin:auto}.reason-card{padding:25px}.final-section{padding-top:100px;padding-bottom:100px}footer{gap:9px;flex-direction:column;align-items:center}.topbar{padding:0 19px}.top-note{font-size:9px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+
+/* BLOOMING HEARTS EFFECT */
+.blooming-hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.bloom-heart {
+  position: absolute;
+  bottom: -50px;
+  color: #ff69a6;
+  opacity: 0;
+  animation: heartBloom linear infinite;
+  text-shadow: 0 0 12px #ff69a6;
+  user-select: none;
+}
+
+@keyframes heartBloom {
+  0% {
+    transform: translateY(0) scale(0.3) rotate(-20deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.65;
+    transform: translateY(-15vh) scale(1) rotate(10deg);
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-115vh) scale(1.5) rotate(35deg);
+    opacity: 0;
+  }
+}
