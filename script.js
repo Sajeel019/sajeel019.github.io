@@ -1,7 +1,7 @@
 // Zuhaa's romantic surprise page.
 // IMPORTANT: This is a playful front-end password gate, not secure authentication.
 // The password is visible to anyone who inspects the public JavaScript source.
-const SECRET_PASSWORD = "Zuhaa";
+const SECRET_PASSWORD = "Zu";
 
 const gate = document.getElementById("passwordGate");
 const website = document.getElementById("mainWebsite");
