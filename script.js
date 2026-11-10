@@ -62,3 +62,29 @@ function burstHearts() {
   }
 }
 
+
+/* MAGICAL BLOOMING HEARTS */
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.querySelector(".blooming-hearts")) return;
+
+  const container = document.createElement("div");
+  container.className = "blooming-hearts";
+  document.body.appendChild(container);
+
+  const hearts = ["♥", "♡", "💗", "💕"];
+
+  for (let i = 0; i < 24; i++) {
+    const heart = document.createElement("span");
+
+    heart.className = "bloom-heart";
+    heart.textContent =
+      hearts[Math.floor(Math.random() * hearts.length)];
+
+    heart.style.left = Math.random() * 100 + "%";
+    heart.style.fontSize = (14 + Math.random() * 24) + "px";
+    heart.style.animationDuration = (8 + Math.random() * 10) + "s";
+    heart.style.animationDelay = (Math.random() * 15) + "s";
+
+    container.appendChild(heart);
+  }
+});
