@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <meta name="description" content="A little universe made just for Zuhaa.">
+  <title>A Secret for Zuhaa ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- Secret entrance: this is a playful client-side gate, not secure authentication. -->
+  <section class="gate" id="passwordGate" aria-labelledby="gateTitle">
+    <div class="gate-card">
+      <div class="gate-flower" aria-hidden="true">✿</div>
+      <p class="eyebrow">A LITTLE SECRET IS WAITING</p>
+      <h1 id="gateTitle">Just for <em>Zuhaa</em></h1>
+      <p class="gate-copy">Someone made something special for you. Enter the little secret to open it.</p>
+      <form id="unlockForm">
+        <label class="sr-only" for="passwordInput">Secret password</label>
+        <input id="passwordInput" type="password" placeholder="Enter the secret password" autocomplete="off" required>
+        <p class="hint">Hint: <strong>Jeel</strong></p>
+        <button class="primary-btn gate-button" type="submit">Unlock my surprise <span>♡</span></button>
+        <p class="gate-error" id="gateError" role="alert" aria-live="polite"></p>
+      </form>
+      <div class="gate-footer">A tiny page, made with care ♡</div>
+    </div>
+    <div class="gate-sparkle sparkle-left" aria-hidden="true">✧</div>
+    <div class="gate-sparkle sparkle-right" aria-hidden="true">♡</div>
+  </section>
+
+  <div id="mainWebsite" class="website-content" hidden>
+    <nav class="topbar">
+      <a class="brand" href="#home" aria-label="Home">for <span>Zuhaa</span> ♡</a>
+      <span class="top-note">a little universe made for you</span>
+    </nav>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div>
+        <p class="eyebrow">A LITTLE SOMETHING, JUST FOR YOU</p>
+        <h1>For the girl who makes<br><em>ordinary days</em> feel lovely.</h1>
+        <p class="hero-copy">I made you a tiny corner of the internet. Take your time, explore, and know that every little detail was chosen with care.</p>
+        <a class="primary-btn" href="#letter">Open your surprise <span>♡</span></a>
+        <div class="scroll-note">SCROLL A LITTLE <span>↓</span></div>
+      </section>
+
+      <section class="section letter-section" id="letter">
+        <div class="section-heading"><p class="eyebrow">WORDS FROM ME TO YOU</p><h2>A letter for <em>Zuhaa</em></h2></div>
+        <article class="letter-card">
+          <div class="letter-top"><span>♡</span><span>JUST FOR YOU</span><span>♡</span></div>
+          <p class="letter-dear">Dear Zuhaa,</p>
+          <p>Some people make the world feel a little softer just by being in it. You have that kind of magic.</p>
+          <p>I hope this little surprise reminds you how appreciated you are. I may not always find the perfect words, but I hope my actions keep showing you how much you mean to me.</p>
+          <p>No matter how many stars fill the sky, you will always be one of my favorite reasons to look up. 💜</p>
+          <p class="letter-sign">With lots of care,<br><strong>Sajeel</strong> ♡</p>
+          <div class="letter-stamp">made<br>with<br>♡</div>
+        </article>
+      </section>
+
+      <section class="section memories-section" id="memories">
+        <div class="section-heading"><p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p><h2>A gallery of <em>memories</em></h2><p class="subheading">Add your favourite photos here to make this page yours.</p></div>
+        <div class="gallery">
+          <figure class="photo-frame"><img src="images/photo-1.jpg" alt="A favourite memory" loading="lazy" onerror="this.parentElement.classList.add('empty');this.remove()"><figcaption>Favourite moment</figcaption><span class="photo-empty">♡<small>Add photo-1.jpg</small></span></figure>
+          <figure class="photo-frame"><img src="images/photo-2.jpg" alt="A happy memory" loading="lazy" onerror="this.parentElement.classList.add('empty');this.remove()"><figcaption>A happy memory</figcaption><span class="photo-empty">✿<small>Add photo-2.jpg</small></span></figure>
+          <figure class="photo-frame"><img src="images/photo-3.jpg" alt="A moment to keep" loading="lazy" onerror="this.parentElement.classList.add('empty');this.remove()"><figcaption>A moment to keep</figcaption><span class="photo-empty">✧<small>Add photo-3.jpg</small></span></figure>
+        </div>
+        <p class="gallery-tip">Add photos to the <code>images</code> folder using the filenames shown above. You can add more by copying a photo-frame block in this HTML.</p>
+      </section>
+
+      <section class="section reasons-section" id="reasons">
+        <div class="section-heading"><p class="eyebrow">A FEW LITTLE REMINDERS</p><h2>Reasons to <em>smile</em></h2></div>
+        <div class="reason-grid">
+          <article class="reason-card"><span>01</span><div class="reason-icon">☼</div><h3>Your warmth</h3><p>You make even an ordinary moment feel a little brighter.</p></article>
+          <article class="reason-card"><span>02</span><div class="reason-icon">✿</div><h3>Your kindness</h3><p>The thoughtful little things you do never go unnoticed.</p></article>
+          <article class="reason-card"><span>03</span><div class="reason-icon">♡</div><h3>Your lovely self</h3><p>There is no one else quite like you, and that's special.</p></article>
+        </div>
+      </section>
+
+      <section class="final-section section" id="surprise">
+        <div class="final-orbit">♡</div>
+        <p class="eyebrow">ONE LAST LITTLE SURPRISE</p>
+        <h2>Will you keep making<br><em>beautiful memories</em> with me?</h2>
+        <p class="final-copy">No pressure, no big speech — just a little question from someone who cares about you.</p>
+        <button class="primary-btn" id="surpriseBtn" type="button">Tap for a surprise ✨</button>
+        <p class="surprise-message" id="surpriseMessage" aria-live="polite"></p>
+      </section>
+    </main>
+    <footer><span>Made with care for Zuhaa</span><span>♡</span><span>One little page, lots of affection.</span></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
